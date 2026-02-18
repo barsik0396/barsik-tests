@@ -1,0 +1,15 @@
+# Тестовый workflow Барсика
+name: Test
+on: fork
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Мяу
+        run: echo мяу
+      - name: Мяу2
+        run: |
+          for /L in (0,0,10) do (
+            echo Мяу
+          )
