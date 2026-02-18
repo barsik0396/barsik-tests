@@ -1,6 +1,6 @@
 # Тестовый workflow Барсика
 name: Test
-on: fork
+on: create
 jobs:
   build:
     runs-on: windows-latest
